@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block form %}
+<form action="/", method="post" id="create-secret">
+  <input type="text" placeholder="New Secret Santa ID" name="id"/>
+  <input type="password" name="password" placeholder="Give a password" />
+  <textarea
+    type="text"
+    name="secret"
+    placeholder="Enter your secret"
+    maxlength="20"
+  ></textarea>
+  <button type="submit">Submit</button>
+</form>
+{% endblock form %}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(35, 51, 51);
+}
+
+body{
+    background-color: rgba(248, 130, 248, 0.253);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(166, 226, 247);
+    padding: 10px;
+    margin: 3px;
+    border-radius: 11px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+#seperater{
+    width: 2px;
+    background-color: darkslategray;
+}
+
+li{
+    margin: 0px 11px;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}   
+
+input, textarea{
+    padding: 11px;
+    height: 3rem;
+    font-size: 2.5rem;
+    margin: 3px;
+    border: 2px solid darkslategray;
+    border-radius: 11px;
+}
+
+textarea[name='secret']{
+    height: 200%;
+    resize: horizontal;
+    resize: vertical;
+}
+
+button{
+    font-size: 1.5rem;
+    width: 150px;
+    padding: 11px;
+    background-color: white;
+    border: .5px solid darkslategray;
+    margin: auto;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+#secret{
+    background-color: salmon;
+    border-radius: 21px;
+    border: 3px solid darkslateblue;
+    width: 30%;
+    margin: 15px auto;
+    padding: 21px;
+}
+#secret>h2{
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#secret>p{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}

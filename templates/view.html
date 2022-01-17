@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block form %}
+<form action="/view" method="post">
+  <input type="text" placeholder="Secret Santa ID" name="id" />
+  <input type="password" name="password" placeholder="Enter the password" />
+  <button type="submit">Submit</button>
+</form>
+<div id="secret">
+  <h2 class="secretTitle">{{ id }}</h2>
+  <p class="actualSecret">{{ secret }}</p>
+</div>
+<button id="toggle">Toggle</button>
+{% endblock form %}
